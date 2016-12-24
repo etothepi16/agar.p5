@@ -7,7 +7,7 @@ var poisonCount = 0;
 var maxR = 0;
 var score = 0; 
 var zoom = 1;
-var paused = false;
+
 
 function setup(){
 	createCanvas(625,625);
@@ -30,13 +30,6 @@ function draw(){
 		playScreen();
 	}else if (gameScreen ==2){
 		gameOverScreen();
-	}
-	function keyPressed(){
-		if (keyCode === TAB && !paused){
-			noLoop();
-		}else{
-			loop();
-		}
 	}
 }
 
